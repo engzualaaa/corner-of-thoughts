@@ -1,0 +1,34 @@
+import { initializeApp } from 
+"https://www.gstatic.com/firebasejs/11.0.2/firebase-app.js";
+
+import { 
+getFirestore,
+collection,
+addDoc
+} from 
+"https://www.gstatic.com/firebasejs/11.0.2/firebase-firestore.js";
+
+
+const firebaseConfig = {
+  apiKey: "AIzaSyAMJWp0Sdm8vctMVfaGA6KcfTkMRsadD20",
+  authDomain: "corner-of-thoughts.firebaseapp.com",
+  projectId: "corner-of-thoughts",
+  storageBucket: "corner-of-thoughts.firebasestorage.app",
+  messagingSenderId: "911520465493",
+  appId: "1:911520465493:web:204adc0436e45820c08adc",
+  measurementId: "G-VM0PZVEZSE"
+};
+
+
+const app = initializeApp(firebaseConfig);
+
+const db = getFirestore(app);
+
+
+await addDoc(collection(db,"notes"),{
+    text:"My first note",
+    created:new Date()
+});
+
+
+console.log("Corner of Thoughts loaded 🌱");

@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,6 +9,7 @@
 
     <link rel="stylesheet" href="style.css">
 </head>
+
 
 <body>
 
@@ -31,11 +33,12 @@
             <div class="plus">+</div>
 
             <input 
+                id="thoughtInput"
                 type="text" 
                 placeholder="your thoughts...."
             >
 
-            <button>
+            <button id="addBtn">
                 ➤
             </button>
 
@@ -45,7 +48,9 @@
     </main>
 
 
-<script src="script.js"></script>
+    <!-- Firebase + your JS -->
+    <script type="module" src="script.js"></script>
 
 </body>
+
 </html>
