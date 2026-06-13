@@ -2,55 +2,171 @@
 <html lang="en">
 
 <head>
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>Corner of Thoughts</title>
 
     <link rel="stylesheet" href="style.css">
+
 </head>
 
 
 <body>
 
-    <main class="container">
 
-        <header class="logo">
-            <h1>cornerofthoughts</h1>
-            <p>a little space for big feelings</p>
-        </header>
+<main class="container">
 
 
-        <div class="thought-area">
+    <header class="logo">
 
-            <!-- sticky notes will come here later -->
+        <h1>cornerofthoughts</h1>
+
+        <p>a little space for big feelings</p>
+
+    </header>
+
+
+
+    <!-- Preview + toolbox -->
+
+    <div class="toolbox" id="toolbox">
+
+
+        <div class="preview-area">
+
+
+            <div 
+            class="note-preview theme-yellow style-1"
+            id="notePreview">
+
+                Your thought...
+
+            </div>
+
 
         </div>
 
 
-        <div class="input-box">
 
-            <div class="plus">+</div>
+        <div class="options">
 
-            <input 
-                id="thoughtInput"
-                type="text" 
-                placeholder="your thoughts...."
-            >
 
-            <button id="addBtn">
-                ➤
-            </button>
+            <div class="option-group">
+
+                <p>Sticky Theme</p>
+
+
+                <button 
+                class="theme-btn active"
+                data-theme="yellow.png">
+
+                    Yellow
+
+                </button>
+
+
+            </div>
+
+
+
+
+            <div class="option-group">
+
+                <p>Text Style</p>
+
+
+                <button
+                class="style-btn active"
+                data-style="style-1">
+
+                    Style 1
+
+                </button>
+
+
+                <button
+                class="style-btn"
+                data-style="style-2">
+
+                    Style 2
+
+                </button>
+
+
+            </div>
+
+
 
         </div>
 
 
-    </main>
+    </div>
 
 
-    <!-- Firebase + your JS -->
-    <script type="module" src="script.js"></script>
+
+
+
+    <div class="thought-area">
+
+
+        <!-- saved notes will appear here later -->
+
+
+    </div>
+
+
+
+
+
+    <div class="input-box">
+
+
+        <div 
+        class="plus"
+        id="openToolbox">
+
+            +
+
+        </div>
+
+
+
+        <input 
+        id="thoughtInput"
+        type="text"
+        placeholder="your thoughts...."
+        >
+
+
+
+
+        <button id="addBtn">
+
+            ➤
+
+        </button>
+
+
+    </div>
+
+
+
+</main>
+
+
+
+
+
+<script 
+type="module"
+src="script.js">
+</script>
+
+
 
 </body>
+
 
 </html>
