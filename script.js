@@ -1,0 +1,1 @@
+console.log("Corner of Thoughts loaded 🌱");
